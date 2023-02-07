@@ -9,7 +9,6 @@ import v1.example.Infra.Product.Snack;
 import v1.example.Infra.Product.Soju;
 import v1.example.Domain.Customer;
 import v1.example.Domain.Kiosk;
-import v2.example.Infra.*;
 
 import java.util.List;
 
