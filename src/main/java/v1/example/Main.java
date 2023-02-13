@@ -25,8 +25,8 @@ public class Main {
 		Customer tk = new CustomerImpl(new WalletImpl(new Cash(500), new Card(0), new IdCard()), PayTypeEnum.CASH);
 		Customer sw = new CustomerImpl(new WalletImpl(new Cash(500), new Card(0), null), PayTypeEnum.CASH);
 		Customer jc = new CustomerImpl(new WalletImpl(new Cash(0), new Card(1000), new IdCard()), PayTypeEnum.CARD);
-		Cart tkCart = new Cart(List.of(new ProductWithAmount(snack, 1), new ProductWithAmount(iceCream, 1)));
-		Cart swCart = new Cart(List.of(new ProductWithAmount(snack, 1), new ProductWithAmount(iceCream, 1), new ProductWithAmount(soju, 1)));
-		Cart jcCart = new Cart(List.of(new ProductWithAmount(snack, 1), new ProductWithAmount(iceCream, 1), new ProductWithAmount(soju, 1)));
+		Cart tkCart = new Cart(List.of(new Bundle(snack, 1), new Bundle(iceCream, 1)));
+		Cart swCart = new Cart(List.of(new Bundle(snack, 1), new Bundle(iceCream, 1), new Bundle(soju, 1)));
+		Cart jcCart = new Cart(List.of(new Bundle(snack, 1), new Bundle(iceCream, 1), new Bundle(soju, 1)));
 	}
 }

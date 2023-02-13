@@ -8,15 +8,15 @@ import java.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class Cart {
-	private List<ProductWithAmount> productsWithAmount;
+	private List<Bundle> bundles;
 
-	public Cart(List<ProductWithAmount> productsWithAmount) {
-		this.productsWithAmount = productsWithAmount;
+	public Cart(List<Bundle> bundles) {
+		this.bundles = bundles;
 	}
 
 	boolean isAffordableToSell(StockManager stockManager) {
-		Optional<ProductWithAmount> found = productsWithAmount.stream().filter((productWithAmount -> {
-			return !stockManager.hasStock(productWithAmount.getProduct(), productWithAmount.getAmount());
+		Optional<Bundle> found = bundles.stream().filter((bundle -> {
+			return !stockManager.hasStock(bundle.getProduct(), bundle.getAmount());
 		})).findFirst();
 		if (found.isPresent()) {
 			System.out.println("재고가 부족하여 구매가 불가능합니다.");
@@ -33,22 +33,22 @@ public class Cart {
 
 	public Integer calculateTotalPrice() {
 		AtomicReference<Integer> totalPrice = new AtomicReference<>(0);
-		productsWithAmount.forEach((productWithAmount -> {
-			totalPrice.updateAndGet(v -> v + productWithAmount.calculatePrice());
+		bundles.forEach((bundle -> {
+			totalPrice.updateAndGet(v -> v + bundle.calculatePrice());
 		}));
 		System.out.println("totalPrice = " + totalPrice);
 		return totalPrice.get();
 	}
 
 	public void boughtBy(StockManager stockManager) {
-		productsWithAmount.forEach((productWithAmount)->{
-			stockManager.minusStock(productWithAmount.getProduct(), productWithAmount.getAmount());
+		bundles.forEach((bundle)->{
+			stockManager.minusStock(bundle.getProduct(), bundle.getAmount());
 		});
 	}
 
 	public void soldBy(Customer customer) {
 		System.out.println("hi");
-		productsWithAmount.forEach((productWithAmount)->{
-			customer.buy(productWithAmount.getProduct(), productWithAmount.getAmount());
+		bundles.forEach((bundle)->{
+			customer.buy(bundle.getProduct(), bundle.getAmount());
 		});}
 }
