@@ -32,9 +32,9 @@ public class WalletImpl implements Wallet {
 	@Override
 	public void buy(Integer price, PayTypeEnum payType) {
 		if (payType == PayTypeEnum.CASH) {
-			cash.setMoney(cash.getMoney() - price);
+			cash.minusMoney(price);
 		} else if (payType == PayTypeEnum.CARD) {
-			card.setMoney(card.getMoney() - price);
+			card.minusMoney(price);
 		}
 	}
 }

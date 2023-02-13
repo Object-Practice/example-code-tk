@@ -15,7 +15,12 @@ public abstract class PayType {
 		return money;
 	}
 
-	public void setMoney(Integer money) {
-		this.money = money;
+
+	public void minusMoney(Integer money){
+		this.money -= money;
+	}
+
+	public void plusMoney(Integer money){
+		this.money += money;
 	}
 }
