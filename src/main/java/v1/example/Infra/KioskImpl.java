@@ -7,8 +7,6 @@ import v1.example.Domain.Customer;
 import v1.example.Infra.PayType.Card;
 import v1.example.Infra.PayType.Cash;
 
-import java.util.List;
-
 public class KioskImpl implements Kiosk {
 	private final StockManager stockManager;
 	Card card = new Card(0);
@@ -25,9 +23,9 @@ public class KioskImpl implements Kiosk {
 			stockManager.minusStock(product, amount);
 
 			Integer totalPrice = product.calculatePrice(amount);
-			if(customer.isCard()){
+			if (customer.isCard()) {
 				card.plusMoney(totalPrice);
-			}else{
+			} else {
 				cash.plusMoney(totalPrice);
 			}
 			return true;
@@ -36,13 +34,27 @@ public class KioskImpl implements Kiosk {
 		}
 	}
 
-//	@Override
-//	public Integer calculateProduct(Product product, Integer amount) {
-//		return product.getPrice() * amount;
-//	}
+
+	@Override
+	public boolean sellMany(Cart cart, Customer customer) {
+		if (!(cart.isAffordableToSell(stockManager) && cart.isAffordableToBuy(customer))) {
+			return false;
+		};
+
+		Integer totalPrice = cart.calculateTotalPrice();
+		cart.soldBy(customer);
+		cart.boughtBy(stockManager);
+		if(customer.isCard()){
+			card.plusMoney(totalPrice);
+		}else{
+			cash.plusMoney(totalPrice);
+		}
+		return true;
+
+	};
 
 
-	public void showInfo(){
+	public void showInfo() {
 		stockManager.showInfo();
 	}
 

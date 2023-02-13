@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60f94b55-d174-491d-8b08-26cd9f89787c" name="Changes" comment="[Chore] 설정파일">
+      <change afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/ProductWithAmount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Kiosk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/CustomerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/CustomerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/KioskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/KioskImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/StockManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/StockManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +92,9 @@
       <recent name="v2.example" />
       <recent name="org.example" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="v1.example.Infra" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -163,14 +168,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="[Modifieid] 가격 계산하는 로직과 card일경우와 현금일 경우에 kiosk에 각각 각각 card와 현금에 돈을 증가시키도록 수정" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/v1/example/Main.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="v1.example.Infra.CustomerImpl" memberName="bag" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

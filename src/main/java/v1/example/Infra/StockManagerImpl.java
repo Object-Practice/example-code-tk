@@ -22,6 +22,8 @@ public class StockManagerImpl implements StockManager {
 		return find.isPresent();
 	}
 
+
+
 	public void minusStock(Product product, int amount){
 		stocks.forEach((Stock stock)->{
 			if(stock.hasStock(product, amount)){
@@ -36,4 +38,8 @@ public class StockManagerImpl implements StockManager {
 
 		}));
 	}
+
+
+
+
 }
