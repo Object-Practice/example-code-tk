@@ -5,5 +5,5 @@ import v1.example.Infra.Cart;
 
 public interface Kiosk {
 
-	boolean sellMany(Cart cart, Customer customer);
+	boolean sell(Cart cart, Customer customer);
 }

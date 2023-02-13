@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60f94b55-d174-491d-8b08-26cd9f89787c" name="Changes" comment="[Refactor] ProductsWithAmount가 도메인에 대한 정확한 지칭을 하지 못한다 생각하여 bundle로 바꿈">
+    <list default="true" id="60f94b55-d174-491d-8b08-26cd9f89787c" name="Changes" comment="[Refactor] sell을 없애고 모든 물건은 한개라도 cart에 담아서 구매하도록 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Kiosk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/KioskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/KioskImpl.java" afterDir="false" />
@@ -167,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676272222655</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[Refactor] sell을 없애고 모든 물건은 한개라도 cart에 담아서 구매하도록 수정">
+      <created>1676272316090</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676272316090</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +186,9 @@
     <MESSAGE value="[Modifieid] 가격 계산하는 로직과 card일경우와 현금일 경우에 kiosk에 각각 각각 card와 현금에 돈을 증가시키도록 수정" />
     <MESSAGE value="[Feat] v2 동작을 위한 완성(카트(장바구니))" />
     <MESSAGE value="[Refactor] ProductsWithAmount가 도메인에 대한 정확한 지칭을 하지 못한다 생각하여 bundle로 바꿈" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Refactor] ProductsWithAmount가 도메인에 대한 정확한 지칭을 하지 못한다 생각하여 bundle로 바꿈" />
+    <MESSAGE value="[Refactor] sell을 업애고 모든 물건은 한개라도 cart에 담아서 구매하도록 수정" />
+    <MESSAGE value="[Refactor] sell을 없애고 모든 물건은 한개라도 cart에 담아서 구매하도록 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor] sell을 없애고 모든 물건은 한개라도 cart에 담아서 구매하도록 수정" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

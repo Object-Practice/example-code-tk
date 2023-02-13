@@ -20,7 +20,7 @@ public class KioskImpl implements Kiosk {
 
 
 	@Override
-	public boolean sellMany(Cart cart, Customer customer) {
+	public boolean sell(Cart cart, Customer customer) {
 		if (!(cart.isAffordableToSell(stockManager) && cart.isAffordableToBuy(customer))) {
 			return false;
 		};
