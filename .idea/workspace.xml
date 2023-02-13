@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60f94b55-d174-491d-8b08-26cd9f89787c" name="Changes" comment="[Modifieid] 가격 계산하는 로직과 card일경우와 현금일 경우에 kiosk에 각각 각각 card와 현금에 돈을 증가시키도록 수정">
+    <list default="true" id="60f94b55-d174-491d-8b08-26cd9f89787c" name="Changes" comment="[Chore] 설정파일">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Kiosk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/CustomerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/CustomerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/PayType/PayType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/PayType/PayType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/WalletImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/WalletImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/KioskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/KioskImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
