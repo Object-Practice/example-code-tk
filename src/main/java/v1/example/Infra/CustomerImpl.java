@@ -31,7 +31,7 @@ public class CustomerImpl implements Customer {
 	@Override
 	public void buy(Product product, int amount) {
 		bag.addProduct(product);
-		wallet.buy(product.getPrice(),payType);
+		wallet.buy(product.calculatePrice(amount),payType);
 	}
 
 	@Override

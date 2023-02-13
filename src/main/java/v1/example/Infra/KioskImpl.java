@@ -24,7 +24,7 @@ public class KioskImpl implements Kiosk {
 			customer.buy(product, amount);
 			stockManager.minusStock(product, amount);
 
-			Integer totalPrice = calculateProduct(product,amount);
+			Integer totalPrice = product.calculatePrice(amount);
 			if(customer.isCard()){
 				card.plusMoney(totalPrice);
 			}else{
@@ -36,10 +36,10 @@ public class KioskImpl implements Kiosk {
 		}
 	}
 
-	@Override
-	public Integer calculateProduct(Product product, Integer amount) {
-		return product.getPrice() * amount;
-	}
+//	@Override
+//	public Integer calculateProduct(Product product, Integer amount) {
+//		return product.getPrice() * amount;
+//	}
 
 
 	public void showInfo(){
