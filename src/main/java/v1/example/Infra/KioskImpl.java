@@ -17,25 +17,26 @@ public class KioskImpl implements Kiosk {
 	}
 
 
-
-
 	@Override
 	public boolean sell(Cart cart, Customer customer) {
 		if (!(cart.isAffordableToSell(stockManager) && cart.isAffordableToBuy(customer))) {
 			return false;
-		};
+		}
+		;
 
 		Integer totalPrice = cart.calculateTotalPrice();
 		cart.soldBy(customer);
 		cart.boughtBy(stockManager);
-		if(customer.isCard()){
+		if (customer.isCard()) {
 			card.plusMoney(totalPrice);
-		}else{
+		} else {
 			cash.plusMoney(totalPrice);
 		}
 		return true;
 
-	};
+	}
+
+	;
 
 
 	public void showInfo() {

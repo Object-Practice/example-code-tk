@@ -1,8 +1,10 @@
 package v1.example.Domain;
 
+import v1.example.Infra.Bundle;
+
 public interface StockManager {
-	boolean hasStock(Product product, int amount);
-	void minusStock(Product product,int amount);
+	boolean hasStock(Bundle bundle);
+	void minusStock(Bundle bundle);
 
 	void showInfo();
 }

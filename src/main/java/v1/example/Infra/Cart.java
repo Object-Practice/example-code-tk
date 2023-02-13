@@ -16,7 +16,7 @@ public class Cart {
 
 	boolean isAffordableToSell(StockManager stockManager) {
 		Optional<Bundle> found = bundles.stream().filter((bundle -> {
-			return !stockManager.hasStock(bundle.getProduct(), bundle.getAmount());
+			return !stockManager.hasStock(bundle);
 		})).findFirst();
 		if (found.isPresent()) {
 			System.out.println("재고가 부족하여 구매가 불가능합니다.");
@@ -41,9 +41,7 @@ public class Cart {
 	}
 
 	public void boughtBy(StockManager stockManager) {
-		bundles.forEach((bundle)->{
-			stockManager.minusStock(bundle.getProduct(), bundle.getAmount());
-		});
+		bundles.forEach(stockManager::minusStock);
 	}
 
 	public void soldBy(Customer customer) {
