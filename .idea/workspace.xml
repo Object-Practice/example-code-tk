@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60f94b55-d174-491d-8b08-26cd9f89787c" name="Changes" comment="">
+    <list default="true" id="60f94b55-d174-491d-8b08-26cd9f89787c" name="Changes" comment="[Modifieid] 가격 계산하는 로직과 card일경우와 현금일 경우에 kiosk에 각각 각각 card와 현금에 돈을 증가시키도록 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/CustomerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/CustomerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/PayType/PayType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/PayType/PayType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/WalletImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/WalletImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +34,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -66,20 +70,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="v2.example.Infra" />
@@ -119,12 +123,44 @@
       <workItem from="1675543013143" duration="4558000" />
       <workItem from="1675667335197" duration="14943000" />
       <workItem from="1675782172024" duration="1033000" />
-      <workItem from="1675783256537" duration="463000" />
+      <workItem from="1675783256537" duration="1090000" />
+      <workItem from="1675934653749" duration="27000" />
+      <workItem from="1676026713323" duration="555000" />
+      <workItem from="1676101528151" duration="2079000" />
+      <workItem from="1676257310155" duration="2159000" />
     </task>
+    <task id="LOCAL-00001" summary="[Fix] 에러수정">
+      <created>1675783759947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675783759947</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[Refactor] 도메인을 좀더 나타낼 수 있는 isAffordableToBuy로 수정">
+      <created>1676258094054</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676258094054</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[Modifieid] 가격 계산하는 로직과 card일경우와 현금일 경우에 kiosk에 각각 각각 card와 현금에 돈을 증가시키도록 수정">
+      <created>1676259304573</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676259304573</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Fix] 에러수정" />
+    <MESSAGE value="[Refactor] 도메인을 좀더 나타낼 수 있는 isAffordableToBuy로 수정" />
+    <MESSAGE value="[Modifieid] 가격 계산하는 로직과 card일경우와 현금일 경우에 kiosk에 각각 각각 card와 현금에 돈을 증가시키도록 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Modifieid] 가격 계산하는 로직과 card일경우와 현금일 경우에 kiosk에 각각 각각 card와 현금에 돈을 증가시키도록 수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
