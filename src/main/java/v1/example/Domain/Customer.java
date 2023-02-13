@@ -5,4 +5,5 @@ public interface Customer {
 	boolean affordableToBuy(int price);
 
 	void buy(Product product, int amount);
+	boolean isCard();
 }

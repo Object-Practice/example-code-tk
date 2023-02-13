@@ -33,4 +33,9 @@ public class CustomerImpl implements Customer {
 		bag.addProduct(product);
 		wallet.buy(product.getPrice(),payType);
 	}
+
+	@Override
+	public boolean isCard(){
+		return payType == PayTypeEnum.CARD;
+	}
 }
