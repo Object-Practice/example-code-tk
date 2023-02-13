@@ -18,19 +18,19 @@ public class CustomerImpl implements Customer {
 		return wallet.hasIdCard();
 	}
 
+	@Override
+	public boolean affordableToBuy(int price) {
+		return wallet.hasMoneyOverPrice(price, payType);
+	}
+
 	void changePayType(PayTypeEnum payType){
 		this.payType = payType;
 	}
 
-	@Override
-	public boolean hasMoneyOverPrice(int price) {
-		return wallet.hasMoneyOverPrice(price, payType);
-	}
 
 	@Override
 	public void buy(Product product, int amount) {
 		bag.addProduct(product);
 		wallet.buy(product.getPrice(),payType);
 	}
-
 }

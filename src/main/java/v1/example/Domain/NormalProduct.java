@@ -7,6 +7,6 @@ public abstract class NormalProduct extends Product{
 
 	@Override
 	public boolean isAvailableBy(Customer customer) {
-		return customer.hasMoneyOverPrice(this.price);
+		return customer.affordableToBuy(this.price);
 	}
 }
