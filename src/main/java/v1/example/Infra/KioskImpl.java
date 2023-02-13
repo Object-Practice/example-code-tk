@@ -16,23 +16,7 @@ public class KioskImpl implements Kiosk {
 		this.stockManager = stockManager;
 	}
 
-	@Override
-	public boolean sell(Product product, Customer customer, int amount) {
-		if (stockManager.hasStock(product, amount) && product.isAvailableBy(customer)) {
-			customer.buy(product, amount);
-			stockManager.minusStock(product, amount);
 
-			Integer totalPrice = product.calculatePrice(amount);
-			if (customer.isCard()) {
-				card.plusMoney(totalPrice);
-			} else {
-				cash.plusMoney(totalPrice);
-			}
-			return true;
-		} else {
-			return false;
-		}
-	}
 
 
 	@Override

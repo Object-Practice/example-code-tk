@@ -28,5 +28,6 @@ public class Main {
 		Cart tkCart = new Cart(List.of(new Bundle(snack, 1), new Bundle(iceCream, 1)));
 		Cart swCart = new Cart(List.of(new Bundle(snack, 1), new Bundle(iceCream, 1), new Bundle(soju, 1)));
 		Cart jcCart = new Cart(List.of(new Bundle(snack, 1), new Bundle(iceCream, 1), new Bundle(soju, 1)));
+
 	}
 }
