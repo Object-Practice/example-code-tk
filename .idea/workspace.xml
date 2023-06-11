@@ -4,41 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60f94b55-d174-491d-8b08-26cd9f89787c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Domain/AdultRequiredProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Domain/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Domain/Kiosk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Domain/NormalProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Domain/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Domain/StockManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Domain/Wallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/Bag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/CustomerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/IdCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/KioskImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/PayType/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/PayType/Cash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/PayType/PayType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/PayTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/Product/IceCream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/Product/Snack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/Product/Soju.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/StockManagerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Infra/WalletImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v2/example/Main.java" afterDir="false" />
+    <list default="true" id="60f94b55-d174-491d-8b08-26cd9f89787c" name="Changes" comment="[Refactor] sellMany-&gt; sell로 수정">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Domain/StockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Domain/StockManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/KioskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/KioskImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Infra/StockManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Infra/StockManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v1/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v1/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +35,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="v1" />
+                    <option name="lastUsedInstant" value="1675783541" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1675783504" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -73,29 +72,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="v2.example.Infra" />
       <recent name="v2.example" />
       <recent name="org.example" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="v1.example.Infra" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="v2.example.Main" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="v1.example.Main" />
       <module name="untitled.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,7 +113,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.object" />
     </list>
   </component>
@@ -125,21 +129,83 @@
       <workItem from="1675543013143" duration="4558000" />
       <workItem from="1675667335197" duration="14943000" />
       <workItem from="1675782172024" duration="1033000" />
+      <workItem from="1675783256537" duration="1090000" />
+      <workItem from="1675934653749" duration="27000" />
+      <workItem from="1676026713323" duration="555000" />
+      <workItem from="1676101528151" duration="2079000" />
+      <workItem from="1676257310155" duration="2159000" />
     </task>
+    <task id="LOCAL-00001" summary="[Fix] 에러수정">
+      <created>1675783759947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675783759947</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[Refactor] 도메인을 좀더 나타낼 수 있는 isAffordableToBuy로 수정">
+      <created>1676258094054</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676258094054</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[Modifieid] 가격 계산하는 로직과 card일경우와 현금일 경우에 kiosk에 각각 각각 card와 현금에 돈을 증가시키도록 수정">
+      <created>1676259304573</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676259304573</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[Feat] v2 동작을 위한 완성(카트(장바구니))">
+      <created>1676271987738</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676271987738</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[Refactor] ProductsWithAmount가 도메인에 대한 정확한 지칭을 하지 못한다 생각하여 bundle로 바꿈">
+      <created>1676272222655</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676272222655</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[Refactor] sell을 없애고 모든 물건은 한개라도 cart에 담아서 구매하도록 수정">
+      <created>1676272316090</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676272316090</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[Refactor] sellMany-&gt; sell로 수정">
+      <created>1676272417414</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676272417414</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Fix] 에러수정" />
+    <MESSAGE value="[Refactor] 도메인을 좀더 나타낼 수 있는 isAffordableToBuy로 수정" />
+    <MESSAGE value="[Modifieid] 가격 계산하는 로직과 card일경우와 현금일 경우에 kiosk에 각각 각각 card와 현금에 돈을 증가시키도록 수정" />
+    <MESSAGE value="[Feat] v2 동작을 위한 완성(카트(장바구니))" />
+    <MESSAGE value="[Refactor] ProductsWithAmount가 도메인에 대한 정확한 지칭을 하지 못한다 생각하여 bundle로 바꿈" />
+    <MESSAGE value="[Refactor] sell을 업애고 모든 물건은 한개라도 cart에 담아서 구매하도록 수정" />
+    <MESSAGE value="[Refactor] sell을 없애고 모든 물건은 한개라도 cart에 담아서 구매하도록 수정" />
+    <MESSAGE value="[Refactor] sellMany-&gt; sell로 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor] sellMany-&gt; sell로 수정" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/v2/example/Main.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="v1.example.Infra.CustomerImpl" memberName="bag" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

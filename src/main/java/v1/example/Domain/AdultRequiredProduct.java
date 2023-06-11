@@ -7,6 +7,6 @@ public abstract class AdultRequiredProduct extends Product {
 
 	@Override
 	public boolean isAvailableBy(Customer customer) {
-		return customer.hasIdCard() && customer.hasMoneyOverPrice(this.price);
+		return customer.hasIdCard() && customer.affordableToBuy(this.price);
 	}
 }

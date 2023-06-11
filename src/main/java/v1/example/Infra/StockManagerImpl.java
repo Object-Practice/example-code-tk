@@ -17,15 +17,17 @@ public class StockManagerImpl implements StockManager {
 	}
 
 	@Override
-	public boolean hasStock(Product product, int amount) {
-		Optional<Stock> find = stocks.stream().filter((Stock stock) -> stock.hasStock(product, amount)).findFirst();
+	public boolean hasStock(Bundle bundle) {
+		Optional<Stock> find = stocks.stream().filter((Stock stock) -> stock.hasStock(bundle)).findFirst();
 		return find.isPresent();
 	}
 
-	public void minusStock(Product product, int amount){
+
+
+	public void minusStock(Bundle bundle){
 		stocks.forEach((Stock stock)->{
-			if(stock.hasStock(product, amount)){
-				stock.minusStock(amount);
+			if(stock.hasStock(bundle)){
+				stock.minusStock(bundle.getAmount());
 			}
 		});
 	}
@@ -36,4 +38,8 @@ public class StockManagerImpl implements StockManager {
 
 		}));
 	}
+
+
+
+
 }

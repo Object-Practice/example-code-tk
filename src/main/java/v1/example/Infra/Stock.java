@@ -15,8 +15,8 @@ public class Stock {
 		return product;
 	}
 
-	public boolean hasStock(Product product, Integer amount) {
-		return isSameProduct(product) && hasMoreStockThanDemand(amount);
+	public boolean hasStock(Bundle bundle) {
+		return isSameProduct(bundle.getProduct()) && hasMoreStockThanDemand(bundle.getAmount());
 	}
 
 	private boolean hasMoreStockThanDemand(Integer demandAmount) {

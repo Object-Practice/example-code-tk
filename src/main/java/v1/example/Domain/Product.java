@@ -29,7 +29,11 @@ public abstract class Product {
 	public int getPrice() {
 		return price;
 	}
-	
+
+	public int calculatePrice(Integer amount) {
+		return price * amount;
+	}
+
 //	public void showInfo(){
 //		System.out.println("Product " + name+ price+"원");
 //	}

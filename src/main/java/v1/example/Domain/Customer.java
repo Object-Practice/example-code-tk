@@ -2,7 +2,8 @@ package v1.example.Domain;
 
 public interface Customer {
 	boolean hasIdCard();
-	boolean hasMoneyOverPrice(int price);
+	boolean affordableToBuy(int price);
 
 	void buy(Product product, int amount);
+	boolean isCard();
 }
